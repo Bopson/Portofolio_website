@@ -1,0 +1,43 @@
+.profil{
+    position: absolute;
+    width: 288px;
+    height: 232px;
+    left: 38px;
+    top: 2px;
+    
+    background: #242430;
+}
+
+#profil{
+    position: absolute;
+    width: 76px;
+    height: 81px;
+    left: 144px;
+    top: 37px;
+    
+    background: url(pf3.png);
+    border-radius: 52px;
+
+}
+
+.about{
+    position: absolute;
+width: 288px;
+height: 415px;
+left: 38px;
+top: 234px;
+
+background: #20202A;
+
+}
+.line{
+    position: absolute;
+width: 188px;
+height: 0px;
+left: 53px;
+top: 133.5px;
+
+border: 1px solid #F7E5E5;
+transform: rotate(0.15deg);
+}
+

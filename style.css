@@ -1,0 +1,132 @@
+:root{
+    --light-black:#242430;
+    --dark-black:#191923;
+    --green:#22710D;
+    --middle-black:#20202A;
+}
+
+*,
+
+body{
+    margin: 0;
+    font-family: "Poppings", sans-serif;
+}
+
+body{
+    display: flex;
+    gap: 50px;
+    background-color: var(--dark-black);
+
+}
+.profil{
+    margin:15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+}
+.about{
+    padding: 25px;
+    display: flex;
+    background-color: var(--middle-black);
+    flex-direction: column;
+    height: 390px;
+    gap: 25px;
+}
+.left-section{
+    width: 288px;
+    height: 658px !important;
+    background-color: var(--light-black);
+  
+}
+.middle-section{
+
+}
+.right-section{
+    
+    height: 658px !important;
+    background-color: var(--light-black);
+}
+.address-country{
+    display: flex;
+    justify-content: space-between;
+}
+.address-town{
+    display: flex;
+    justify-content: space-between;
+}
+.age{
+    display: flex;
+    justify-content: space-between;
+}
+.languages{
+    display: flex;
+
+}
+.icons{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+padding-top: 10px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 30px;
+}
+.container{
+    margin-top: 60px;
+    display: flex;
+    background-image: url("Images/code\ matrix\ clear\ bakcground.png");
+    justify-content: space-between;
+}
+.header{
+    margin-top: 0;
+    background-image: url("Images/code\ matrix\ blur\ background.png") !important;
+}
+.btn{
+    background-color: var(--green);
+    padding: 15px;
+    width: 216px;
+    height: 22px;
+    text-decoration: none;
+}
+.experience{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px;
+}
+
+h1{
+    font-size: 38px; color: var(--green);"
+}
+.years-experience{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.completed-projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.certifications{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white
+}
+h4, p{
+    color: white;
+}
+p{
+    color: gray;
+}
