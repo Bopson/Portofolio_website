@@ -9,6 +9,8 @@
 </head>
 <body>
 
+    
+
     <!-- Left of the page -->
 <div class="left-section">
     <div class="profil">
@@ -68,10 +70,10 @@
     <section class="header">
         <div class="container">
             <div class="content">
-                <h1 style="font-size: 38px; color: white;">Discover my Amazing</h1>
-                <h1 style="font-size: 38px; color: white;"> Art Space!</h1>
-                <h3>&lt;code&gt;I develop web applications.&lt;/code&gt;</h3>
-                <a href="#" class="btn" style="color: white;">EXPLORE NOW</a>
+                <h1 style="font-size: 38px; color: white;">Discover my Amazing <span style="font-family: calibri;">Art Space!</span></h1>
+                
+                <h3><span style="color: green; font-style: italic;">&lt;code&gt;</span><span class="auto-type" style="font-size: 16px; font-family: 'Times New Roman', Times, serif;font-style: italic;"></span> <span style="color: green; font-style: italic;">&lt;/code&gt;</span></h3>
+                <a href="#" class="btn" style="color: black; text-align: center; font-size: 20px;">EXPLORE NOW</a>
             </div>
             <img src="Images/Full profile image.png" alt="">
         </div>
@@ -80,20 +82,21 @@
         <div class="experience">
             <div class="years-experience">
                 <h1>3+</h1>
-                <h3>Years Experience</h3>
+                <h5>Years Experience</h5>
             </div>
             <div class="completed-projects">
                 <h1>7</h1>
-                <h3>Completed Projects</h3>
+                <h5>Completed Projects</h5>
             </div>
             <div class="certifications">
                 <h1>7+</h1>
-                <h3>Certifications</h3>
+                <h5>Certifications</h5>
             </div>
 
         </div>
+        <h3>My Services</h3>
         <div class="services">
-            <h3>My Services</h3>
+           
             <div class="app-development">
                 <h4>Web Applications Development</h4>
                 <p> I design full responsive web applications with 
@@ -120,63 +123,78 @@
                 <a href="#">ORDER NOW</a>
             </div>
 
-            <div class="projects">
-                <h3>My Projects</h3>
-                <div class="e-library">
-                    <h4>E-Library</h4>
-                    <p>Web Design, Development</p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend, nisi vitae ultrices eleifend, augue eros bibendum dolor, ac pulvinar mi turpis ut est. Morbi ut erat quis massa tincidunt amet, dictum eros.
-                    </p>
-                    <a href="btn-projects">Visit Site</a>
-                </div>
-
-                <div class="landing-page">
-                    <h4>Real Estate Landing page</h4>
-                    <p>Web Design, Development</p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend, nisi vitae ultrices eleifend, augue eros bibendum dolor, ac pulvinar mi turpis ut est. Morbi ut erat quis massa tincidunt amet, dictum eros.
-                    </p>
-                    <a href="btn-projects">Visit Site</a>
-                </div>
-            </div>
             
+        </div>
+        <h3>My Projects</h3>
+
+        <div class="projects">
+            <div class="e-library">
+                <h4>E-Library</h4>
+                <p>Web Design, Development</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend, nisi vitae ultrices eleifend, augue eros bibendum dolor, ac pulvinar mi turpis ut est. Morbi ut erat quis massa tincidunt amet, dictum eros.
+                </p>
+                <a href="btn-projects">Visit Site</a>
+            </div>
+
+            <div class="landing-page">
+                <h4>Real Estate Landing page</h4>
+                <p>Web Design, Development</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend, nisi vitae ultrices eleifend, augue eros bibendum dolor, ac pulvinar mi turpis ut est. Morbi ut erat quis massa tincidunt amet, dictum eros.
+                </p>
+                <a href="btn-projects">Visit Site</a>
+            </div>
         </div>
 
         
     </section>
 <section class="footer">
     <p>2022 All Rights Reserved.</p>
-    Email: medjiengoue@gmail.com
+   <p> Email: medjiengoue@gmail.com</p>
 </section>
 
 </div>
 
 
   <!-- Right of the page -->
-<div class="right-section">
-    <div id="main">
-     
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Home</span>
-      </div>
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+
+  <div class="right-section">
+    <span style="font-size:30px;cursor:pointer; color: green;" onclick="openNav()">&#9776; </span>
+</div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+  </div>
+  
 
       </div>
 
      
    
-</div>
 
 
 
 
+
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <script src="main2.js"></script>
+    <script>var typed= new Typed(".auto-type", {
+            strings:["I develop web applications.", 
+            "I create responsive websites.",
+            "I develop desktop applications."
+        ],
+            typeSpeed:100,
+            backSpeed:20,
+            loop: true
+
+    })
+    
+    </script>
     
 </body>
 </html>
