@@ -57,7 +57,7 @@ flex-direction: column;
 .right-section{
     display: flex;
     justify-content: center;
-    height: 1200px !important;
+    min-height: 100%;
     background-color: black;
     border: 1px solid var(--green);
     width: 65px;
@@ -211,7 +211,7 @@ p{
     display: flex;
     flex-direction: column;
     height: auto;
-    max-width: 232px;
+  
     gap: 20px;
     background-color: black;
     border: 1px solid var(--green);
@@ -243,6 +243,7 @@ p{
     background-color: var(--light-black);
     padding: 10px;
     bottom: 0;
+    margin-top: 30px;
   
   }
   h3{
@@ -252,3 +253,34 @@ p{
     font-family: calibri;
   }
  
+  #myVideo {
+    position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      opacity: 0.2;
+      margin-right: 70px;
+    }
+
+    .tools{
+        display: flex;
+        background-color: white;
+        justify-content: space-around;
+        opacity: 0.8;
+        margin: 20px 0;
+    }
+    .tools img{
+        width: 70px;
+        height: 70px;
+    }
+
+    .contact{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .field-name, .field-email,.field-message{
+        display: flex;
+       width: 600px;
+    }
