@@ -16,7 +16,11 @@ body{
 body{
     display: flex;
     gap: 50px;
-    background-color: black;
+   
+    background-color: rgba(19, 7, 71, 0.849);
+    background-color: black  
+
+    
 
 }
 .profil{
@@ -28,12 +32,13 @@ body{
     justify-content: center;
     align-items: center;
     column-gap: 5px;
+    border: 1px solid var(--light-black);
 }
 .about{
     padding: 25px;
     display: flex;
     background-color: black;
-    border: 1px solid var(--green);
+    border: 1px solid black;
     flex-direction: column;
     height: 390px;
     gap: 25px;
@@ -43,9 +48,9 @@ body{
     width: 288px;
     height: 642px !important;
     background-color: black;
-    border: 3px solid var(--green);
+    border: 3px solid var(--light-black);
     position: fixed;
-    box-shadow: 5px 8px 4px green;
+    box-shadow: 5px 8px 4px black;
 
 }
 .middle-section{
@@ -59,11 +64,11 @@ flex-direction: column;
     justify-content: center;
     min-height: 100%;
     background-color: black;
-    border: 1px solid var(--green);
+    border: 1px solid var(--light-black);
     width: 65px;
     margin: 11px 8px 0 0;
-    box-shadow: -5px 8px 4px green;
-    border: 3px solid var(--green);
+    box-shadow: -5px 8px 4px black;
+    border: 3px solid var(--light-black);
 
     
 }
@@ -90,6 +95,7 @@ flex-direction: column;
     align-items: center;
     gap: 20px;
     padding-top: 2px;
+    border: 1px solid var(--light-black);
    
 
 }
@@ -100,13 +106,13 @@ flex-direction: column;
     padding: 30px;
     padding-top: 120px;
     padding-left: 90px;
+    background-image: url("Images/earth-ge471ce8e1_640.jpg");
+
 }
 .container{
     margin-top: 60px;
     display: flex;
-    background-image: url("Images/code\ matrix\ clear\ bakcground.png");
     justify-content: space-between;
-    box-shadow: 12px 17px 4px #000000;
    
 }
 .header{
@@ -114,7 +120,9 @@ flex-direction: column;
     background-image: url("Images/code\ matrix\ blur\ background.png") !important;
 }
 .btn{
-    background-color: var(--green);
+    background-color: rgba(10, 10, 112, 0.63);
+    border: solid 1px rgba(10, 10, 112, 0.63);
+    opacity: 0.8;
     padding: 15px;
     width: 216px;
     height: 22px;
@@ -127,7 +135,7 @@ flex-direction: column;
 }
 
 h1{
-    font-size: 38px; color: var(--green);
+    font-size: 38px; color: yellow;
 }
 .years-experience{
     display: flex;
@@ -163,7 +171,7 @@ p{
     top: 0;
     right: 0;
     background-color: black;
-    border: 1px solid var(--green);
+    border: 1px solid var(--light-black);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -214,7 +222,7 @@ p{
   
     gap: 20px;
     background-color: black;
-    border: 1px solid var(--green);
+    border: 1px solid var(--light-black);
     padding: 25px;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -230,7 +238,7 @@ p{
     max-width: 232px;
     gap: 20px;
     background-color: black;
-    border: 1px solid var(--green);
+    border: 1px solid var(--light-black);
     padding: 25px;
     flex-wrap: wrap;
     justify-content: space-between;
