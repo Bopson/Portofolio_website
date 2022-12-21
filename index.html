@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css-circle/css/circle.css">
+ <!--    <link rel="stylesheet" href="preload.css"> -->
 </head>
 <body>
 
@@ -14,12 +16,28 @@
     <!-- Left of the page -->
 <div class="left-section">
     <div class="profil">
-        <img src="Images/pf3 1.png" alt="profil">
-        <h4>Medjiengoue</h4>
-        <h4>Baudry</h4>
-        <p>Web Developer</p>
+        <div class="profil-download">
+             <!--    <div class="chevron"></div>
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <p>CV</p> -->
+                <a href="/Images/MEDJIENGOUE Baudry -CV (F).pdf" download="Baudry_CV" class="download">
+            <img src="Images/download.png" style="width: 18px; height: auto; float: left; " alt="Arrow"> <br>
+            <p> CV</p>
+        </a>
+            
+        </div>
+       
+
+        <div class="profil-content" >
+            <img src="Images/pf3 1.png" alt="profil">
+            <h4>Medjiengoue</h4>
+            <h4>Baudry</h4>
+            <p>Web Developer</p>
+        </div>
+      
     </div>
-    <div class="about">
+    <div class="about" style="overflow: auto; margin-bottom: 15px;">
         <div class="address-country">
             <h4>Residence:</h4>
             <p>Rwanda</p>
@@ -33,47 +51,123 @@
             <p>24</p>
         </div>
        
-            <h4>Languages</h4>
-            <div class="languages">
+<hr>
+<h4>Languages</h4>
 
-                
-                <div class="french">
-                    <div class="percentage">
-                        100%
-                    </div>
-                    <p>French</p>
+            <div class="languages">
+            <div class="percentages">
+
+            <div class="c100 p100 small dark">
+                <span style=" color:white">100%</span>
+                <div class="slice">
+                    <div class="bar"></div>
+                    <div class="fill"></div>
                 </div>
-                <div class="english">
-                    <div class="percentage">
-                        95%
-                    </div>
-                    <p>English</p>
-                </div>
-                <div class="German">
-                    <div class="percentage">
-                        75%
-                    </div>
-                    <p>German</p>
+            
+            </div>
+
+            <div class="c100 p95 small dark">
+                <span style=" color:white">95%</span>
+                <div class="slice">
+                    <div class="bar"></div>
+                    <div class="fill"></div>
                 </div>
             </div>
-            
+
+            <div class="c100 p70 small dark">
+                <span style=" color:white">70%</span>
+                <div class="slice">
+                    <div class="bar"></div>
+                    <div class="fill"></div>
+                </div>
+            </div>
+        </div>
+
+
+<div class="language-titles">
+    <div class="french">
+        <div class="percentage">
+            100%
+        </div>
+        <p>French</p>
     </div>
+    <div class="english">
+        <div class="percentage">
+            95%
+        </div>
+        <p>English</p>
+    </div>
+    <div class="German">
+        <div class="percentage">
+            75%
+        </div>
+        <p>German</p>
+    </div>
+</div>
+</div>
+
+<hr>
+<div class="skills-section">
+
+    <h4>Coding</h4> <br>
+    <div class="skills-block">
+    <p>HTML</p>
+        <div class="container-skills">
+            <div class="skills html">90% </div>
+        </div>
+    </div>
+
+    <div class="skills-block">
+        <p>CSS</p>
+            <div class="container-skills">
+                <div class="skills css">90% </div>
+            </div>
+        </div>
+
+        <div class="skills-block">
+            <p>JavaScript</p>
+                <div class="container-skills">
+                    <div class="skills javascript">90% </div>
+                </div>
+            </div>
+
+            <div class="skills-block">
+                <p>Java</p>
+                    <div class="container-skills">
+                        <div class="skills java">85% </div>
+                    </div>
+                </div>
+                <div class="skills-block">
+                    <p>Python</p>
+                        <div class="container-skills">
+                            <div class="skills python">80% </div>
+                        </div>
+                    </div>
+
+</div>
+
+
+                
+            </div>
+            
+   
     <div class="icons">
         <img src="Images/Twitter incon.svg" alt="Twitter">
         <img src="Images/Github icon.svg" alt="Github">
         <img src="Images/LinkedIn Icon.svg" alt="LindedIn">
     </div>
+
 </div>
 
   <!-- Middle of the page -->
-<div class="middle-section">
+<div class="middle-section" id="middle">
     <section class="header">
         <div class="container">
             <div class="content">
                 <h1 style="font-size: 38px; color: white;">Discover my Amazing <span style="font-family: calibri;">Art Space!</span></h1>
                 
                 <h3><span style="color: yellowgreen; font-style: italic; font-size: 16px;">&lt;code&gt;</span><span class="auto-type" style="font-size: 16px; color:yellow; font-family: 'Times New Roman', Times, serif;font-style: italic; "></span> <span style="color: yellowgreen; font-size: 16px; font-style: italic;">&lt;/code&gt;</span></h3>
-                <a href="#" class="btn" style="color: white; text-align: center; font-size: 20px;">EXPLORE NOW</a>
+              <button class="btn" style="color: white; text-align: center; font-size: 20px; z-index: 2; padding-bottom: 10px;" onclick="loadDoc();">EXPLORE NOW</button>
             </div>
             <img src="Images/Full profile image.png" style="opacity: 0.7; background-color: blue; " alt="">
         </div>
@@ -196,11 +290,11 @@
 
         <h3 style="padding-top: 25px;">Get in touch</h3>
 
-        <div class="projects" style="display: flex; flex-direction: column; border: solid 1px var(--light-black); padding: 30px; background-color: var(--light-black);">
+        <div class="projects" style="display: flex; z-index: 2; flex-direction: column; border: solid 1px var(--light-black); padding: 30px; background-color: var(--light-black);">
             <div class="field" style="background-color: white; opacity:0.6; width: 100%;">
-                <div class="field-name">
+                <div class="field-name" >
                     <img src="Images/person-svgrepo-com.svg" alt="person" style="padding: 10px;" >
-                    <input type="text" style=" background-color: gray; width: 100%;" placeholder="Name">
+                    <input type="text" style=" background-color: gray; width: 100%; z-index: 2;" placeholder="Name">
                 </div>
                 
         </div>
@@ -274,9 +368,31 @@
     })
     
     </script>
+
+<script>
+    function loadDoc() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("middle").innerHTML =
+          this.responseText;
+        }
+      };
+      xhttp.open("GET", "ajax1.html", true);
+      xhttp.send();
+    }
+    </script>
     
-    <video autoplay muted loop id="myVideo">
+    <video autoplay muted loop id="myVideo" style="z-index: 1;">
         <source src="Images/video.mp4" type="video/mp4">
       </video>
+
+      <!-- Preload -->
+     <!--  <div class="wrapper">
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div> -->
+
+      </div>
 </body>
 </html>
