@@ -18,8 +18,11 @@ body{
     gap: 50px;
    
     background-color: rgba(19, 7, 71, 0.849);
-    background-color: #262626 ;
-    
+/*     background-color: #262626 ;
+ */    
+ background-color: rgb(36, 14, 14);
+ background-color: black;
+ 
 
 
 }
@@ -70,7 +73,7 @@ body{
     flex-direction: column;
     margin:11px 0 0 8px; 
     width: 288px;
-    height: 642px !important;
+    height: 635px !important;
     background-color: black;
     border: 3px solid var(--light-black);
     position: fixed;
@@ -80,19 +83,24 @@ body{
 .middle-section{
     height: 100%;
 margin-left: 335px;
+margin-right: 150px;
 display: flex;
 flex-direction: column;
 }
 .right-section{
     display: flex;
+
     justify-content: center;
-    min-height: 100%;
+    height: 635px !important;
     background-color: black;
     border: 1px solid var(--light-black);
     width: 65px;
     margin: 11px 8px 0 0;
+    right: 0 !important;
     box-shadow: -5px 8px 4px black;
     border: 3px solid var(--light-black);
+    position: fixed;
+
 
     
 }
@@ -128,8 +136,18 @@ flex-direction: column;
     align-items: center;
     gap: 20px;
     border: 1px solid var(--light-black);
+
    
 
+}
+.icons img{
+  width: 20px;
+  height: auto;
+  padding: 10px 0;
+}
+
+.icons img:hover{
+  transform: scale(1.2);
 }
 .content{
     display: flex;
@@ -149,8 +167,8 @@ flex-direction: column;
 }
 .header{
     margin-top: 0;
-    background-image: url("Images/code\ matrix\ blur\ background.png") !important;
-}
+/*     background-image: url("Images/code\ matrix\ blur\ background.png") !important;
+ */}
 .btn{
     background-color: rgba(10, 10, 112, 0.63);
     border: solid 1px rgba(10, 10, 112, 0.63);
@@ -343,15 +361,18 @@ p{
 /*         opacity: 1 !important;
  */      }
       
-      .html {width: 90%;    background-color: var(--light-black); opacity: 1; z-index: -1;
+      .html {width: 90%;     background-color: rgb(36, 14, 14); opacity: 1; z-index: -1;
       }
-      .css {width: 90%;background-color: var(--light-black); opacity: 1; z-index: -1;
+      .css {width: 90%; background-color: rgb(36, 14, 14); opacity: 1; z-index: -1;
       }
-      .javascript {width: 90%;background-color: var(--light-black); opacity: 1; z-index: -1;
+      .javascript {width: 90%; background-color: rgb(36, 14, 14); opacity: 1; z-index: -1;
+      }
+      .ajax {width: 85%; background-color: rgb(36, 14, 14); opacity: 1; z-index: -1;
       }
 
-      .java {width: 85%;background-color: var(--light-black); opacity: 1; z-index: -1;}
-      .python {width: 80%; background-color: var(--light-black); opacity: 1; z-index: -1;}
+
+      .java {width: 85%; background-color: rgb(36, 14, 14); opacity: 1; z-index: -1;}
+      .python {width: 80%;  background-color: rgb(36, 14, 14); opacity: 1; z-index: -1;}
 
       .container-skills {
         width: 100%;
