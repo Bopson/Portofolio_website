@@ -170,9 +170,11 @@
             
    
     <div class="icons">
-        <img src="Images/Twitter incon.svg" alt="Twitter">
-        <img src="Images/Github icon.svg" alt="Github">
         <img src="Images/LinkedIn Icon.svg" alt="LindedIn">
+        <img src="Images/Github icon.svg" alt="Github">
+        <img src="Images/Twitter incon.svg" alt="Twitter">
+       
+        
     </div>
 
 </div>
@@ -274,7 +276,7 @@
 
         <h3 style="padding-top: 80px;">Contact Information</h3>
 
-        <div class="contact">
+        <div class="contact" id="contact">
             <div class="linux" style="width: 200px;">
                 <div class="address-country">
                     <h4>Residence:</h4>
@@ -309,21 +311,21 @@
         <h3 style="padding-top: 25px;">Get in touch</h3>
 
         <div class="projects" style="display: flex; z-index: 2; flex-direction: column; border: solid 1px var(--light-black); padding: 30px; background-color: var(--light-black);">
-            <div class="field" style="background-color: white; opacity:0.6; width: 100%;">
-                <div class="field-name" >
+            <div class="field" style="background-color: white; opacity:0.6; width: 100%; z-index: 2;" >
+                <div class="field-name" style="z-index: 2;" >
                     <img src="Images/person-svgrepo-com.svg" alt="person" style="padding: 10px;" >
                     <input type="text" style=" background-color: gray; width: 100%; z-index: 2;" placeholder="Name">
                 </div>
                 
         </div>
-        <div class="field" style="background-color: white; opacity:0.6; width: 100%;">
+        <div class="field" style="background-color: white; opacity:0.6; width: 100%; z-index: 2;">
             <div class="field-name">
                 <img src="Images/at-svgrepo-com.svg" style="width: 20px; height: 20px; padding: 10px;"  alt="person" >
                 <input type="text" style=" background-color: gray; width: 95%;" placeholder="Email">
             </div>
-            
+        
     </div>
-    <div class="field" style="background-color: white; opacity:0.6; width: 100%;">
+    <div class="field" style="background-color: white; opacity:0.6; width: 100%; z-index: 2;">
         <div class="field-name">
             <img src="Images/message-svgrepo-com.svg" style="width: 20px; height: 20px; padding: 10px;" alt="person" >
             <input type="text" placeholder="Message" style=" background-color: gray; width: 95%;height: 150px;" >
@@ -331,7 +333,7 @@
         
 </div>
 
-<a href="#" class="btn" style="color: white; text-align: center; font-size: 20px;">SEND MESSAGE</a>
+<button href="#" class="btn" style="color: white; text-align: center; font-size: 20px; z-index: 2;">SEND MESSAGE</button>
 
 </div>
 
@@ -351,14 +353,13 @@
   <!-- Right of the page -->
 
   <div class="right-section">
-    <span style="font-size:30px;cursor:pointer; color: white;position: fixed;" onclick="openNav()">&#9776; </span>
+    <span  style="font-size:30px; cursor:pointer; color: white;position: fixed;" onclick="openNav()">&#9776; </span>
 </div>
-<div id="mySidenav" class="sidenav">
+<div id="mySidenav" class="sidenav" style="z-index: 2;">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
+  <a id="home" onclick="loadHome()" href="#">Home</a>
+  <a href="#">Portofolio</a>
+  <a href="#contact">Contact</a>
   </div>
   
 
@@ -387,7 +388,8 @@
     
     </script>
 
-<script>
+<!-- Load Portofolio -->
+ <script>
     function loadDoc() {
       var xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange = function() {
@@ -400,6 +402,25 @@
       xhttp.send();
     }
     </script>
+
+
+<!-- Load Home -->
+<script>
+    function loadHome() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("middle").innerHTML =
+          this.responseText;
+        }
+      };
+      xhttp.open("GET", ".middle-section", true);
+      xhttp.send();
+    }
+    </script>
+
+
+
 
     <!-- Preloader -->
 
@@ -424,6 +445,20 @@ $(".btn").click(function(){
         }, 1000);
 }); 
     </script>
+
+<script>
+
+    $("#home").click(function(){
+        $('.middle-section').hide();
+        $('.preloader-header').show().fadeToggle(1000);
+                 setTimeout(function(){
+              
+                $('.middle-section').show();
+            }, 1000);
+    }); 
+        </script>
+
+
     <!-- <script>
         const myTimeout = setTimeout(load_page, 2000);
         
