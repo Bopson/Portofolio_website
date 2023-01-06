@@ -348,7 +348,7 @@ p{
 
     .field-name, .field-email,.field-message{
         display: flex;
-       width: 600px;
+       width: auto;
     }
 
     .skills {
@@ -446,10 +446,97 @@ p{
 
 
 
-@media (max-width: 767px) {
+@media (max-width: 412px) {
+  body{
+    width: 412px;
+    position:absolute;
+    height: 100%;
+  }
+  .container img {
+    display: none !important;
+  }
+  #contac-msg{
+  width: 315px;
+  margin: 0 5px;
+  }
+  
+  
+  
+  .header, .container{
+    max-width: 412px;
+    padding: 0;
+    
+    
+  }
   .left-section {
     display: none;
+    z-index: -1;
+    opacity: 0;
   }
+
+  .right-section{
+   
+    display: none;
+  }
+  .middle-section{
+    
+    position: absolute;
+    z-index: 3;
+    margin: 0 10px;
+   
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+  }
+  .tools{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 380px;
+gap: 5px  }
+  .services{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+
+  }
+   .e-library, .landing-page{
+    display: flex;
+    flex-direction: column !important;
+    width: fit-content !important;
+
+  }
+ 
+  .contact{
+    display: flex;
+    flex-direction: column;
+
+  }
+  #mySidenav{
+    display: none;
+  }
+
+
+  #myVideo {
+    
+      margin-right: 0 !important;
+    }
+
+/*   .experience h1{
+    transform: scale(0.6);
+  }
+  .experience h5{
+    transform: scale(0.8);
+  } */
+.experience{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+}
 
 
 
