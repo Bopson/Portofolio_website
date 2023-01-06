@@ -446,8 +446,10 @@ p{
 
 
 
-
-
+@media (max-width: 767px) {
+  .left-section {
+    display: none;
+  }
 
 
 
