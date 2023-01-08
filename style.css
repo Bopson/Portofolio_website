@@ -298,6 +298,13 @@ p{
     justify-content: space-between;
     box-shadow: 12px 17px 4px #000000;
     flex: 30%;
+   
+    z-index: 2;
+  }
+
+  .app-development:hover, .ui-design:hover, .it-support:hover, .linux:hover{
+    transform: scale(1.04); 
+    transition: transform 400ms ease-in-out;
   }
   
  .e-library, .landing-page{
