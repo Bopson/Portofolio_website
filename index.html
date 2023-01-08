@@ -339,30 +339,31 @@
         <h3 style="padding-top: 25px;">Get in touch</h3>
 
         <div class="projects" id="contac-msg" style="display: flex; z-index: 2; flex-direction: column; border: solid 1px var(--light-black); padding: 30px; background-color: var(--light-black);">
+            <form name="myForm" action="/ajaxForm.html" onsubmit="return validateForm()" method="post" style="z-index: 2;">
             <div class="field" style="background-color: white; opacity:0.6; width:100%; z-index: 2;" >
                 <div class="field-name" style="z-index: 2;" >
-                    <img src="Images/person-svgrepo-com.svg" alt="person" style="padding: 10px;" >
-                    <input type="text" style=" background-color: gray; width: 100%; z-index: 2;" placeholder="Name">
+                    <img src="Images/person-svgrepo-com.svg" alt="person" style="width: 20px; height: 20px;padding: 10px;" >
+                    <input type="text" name="fname" style=" background-color: gray; width: 100%; z-index: 2;" placeholder="Name" required>
                 </div>
                 
         </div>
         <div class="field" style="background-color: white; opacity:0.6; width: 100%; z-index: 2;">
             <div class="field-name">
                 <img src="Images/at-svgrepo-com.svg" style="width: 20px; height: 20px; padding: 10px;"  alt="person" >
-                <input type="email" style=" background-color: gray; width: 95%;" placeholder="Email">
+                <input type="email" style=" background-color: gray; width: 95%;" placeholder="Email" required>
             </div>
         
     </div>
     <div class="field" style="background-color: white; opacity:0.6; width: 100%; z-index: 2;">
         <div class="field-name">
             <img src="Images/message-svgrepo-com.svg" style="width: 20px; height: 20px; padding: 10px;" alt="person" >
-            <input type="text" placeholder="Message" style=" background-color: gray; width: 95%;height: 150px;" >
+            <input type="text" placeholder="Message" style=" background-color: gray; width: 95%;height: 150px;"  required>
         </div>
         
 </div>
 
-<button type="submit" class="btn" style="color: white; text-align: center; font-size: 20px; z-index: 2;">SEND MESSAGE</button>
-
+<button type="submit" class="btn2" style="color: white; text-align: center; font-size: 20px; z-index: 2;">SEND MESSAGE</button>
+</form>
 </div>
 
         
@@ -487,6 +488,15 @@ $(".btn").click(function(){
         </script>
 
 
+<script>
+    function validateForm() {
+      let x = document.forms["myForm"]["fname"].value;
+      if (x == "") {
+        alert("Name must be filled out");
+        return false;
+      }
+    }
+    </script>
     <!-- <script>
         const myTimeout = setTimeout(load_page, 2000);
         
