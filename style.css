@@ -36,6 +36,7 @@ body{
     align-items: center; */
     column-gap: 5px;
     border: 1px solid var(--light-black);
+    
 }
 .profil-download p:hover{color: white;}
 
@@ -79,6 +80,19 @@ body{
     position: fixed;
     box-shadow: 5px 8px 4px black;
     z-index:2;
+}
+
+.left-section2{
+  display: flex;
+  flex-direction: column;
+  margin:11px 0 0 8px; 
+  width: 288px;
+  height: 635px !important;
+  background-color: black;
+  border: 3px solid var(--light-black);
+  position: absolute;
+  box-shadow: 5px 8px 4px black;
+  z-index:2;
 }
 .middle-section{
     height: 100%;
@@ -511,11 +525,17 @@ p{
     
     
   }
-  .left-section {
+/*   .left-section {
     display: none;
     z-index: -1;
     opacity: 0;
-  }
+  } */
+
+     .left-section{
+      display: none !important;
+    z-index: 4;
+ 
+  } 
 .projects{
   display: flex;
   flex-direction: column;
